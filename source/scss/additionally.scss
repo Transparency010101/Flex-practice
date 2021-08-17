@@ -1,0 +1,11 @@
+%container {
+    // $ Общий контейнер
+    max-width: 1080px;
+    margin: auto;
+}
+%title {
+    // $ Для заголовков "Что такое FlexBox?" и "Колонки с flex-контейнерами"
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+}
