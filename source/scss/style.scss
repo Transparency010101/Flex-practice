@@ -3,9 +3,6 @@
 // $ Миксины, шаблоны, перемменые
 @import "additionally";
 // $ Основные настройки
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 .wrapper {
     // $ Прижимает footer к низу
     min-height: 100%;
@@ -15,6 +12,7 @@ body {
 .content {
     // $ Прижимает footer к низу
     flex: 1 1 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
     // $ Общий контейнер
@@ -104,12 +102,15 @@ body {
     }
 }
 .flex-container {
+    // $ Оболочка
     &__row {
+        // $ Flex контейнер
         display: flex;
         justify-content: space-between;
     }
 
     &__body {
+        // $ Оболочка для &__image, &__title, &__text
         margin-left: 15px;
     }
 
