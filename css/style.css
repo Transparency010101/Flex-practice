@@ -104,10 +104,6 @@ h6 {
   color: #445161;
 }
 
-body {
-  min-width: 1060px;
-}
-
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -135,7 +131,7 @@ img {
 }
 
 .hi {
-  height: 325px;
+  height: 100%;
   background-color: #445162;
   padding-top: 10px;
 }
@@ -204,7 +200,6 @@ img {
 
 .flex-columns {
   padding: 35px 0;
-  max-height: 485px;
   background-color: #f5f5f5;
 }
 .flex-columns__title {
@@ -212,6 +207,9 @@ img {
   margin-bottom: 40px;
 }
 
+.flex-container {
+  width: 100%;
+}
 .flex-container__row {
   padding: 0 3px;
   display: -webkit-box;
@@ -220,6 +218,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 .flex-container__body {
   margin-left: 15px;

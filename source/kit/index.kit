@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <meta name="viewport" content="width=1060">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- $ Отключает форматирование ссылки у номера телефона на IOS -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+    <!-- $ Индексация -->
+    <meta name="robots" content="none">
+    <!-- $ Авторские права -->
+    <meta name="Author" content="Transparency">
+    <meta name="Copyright" content="Transparency">
+    <meta name="Address" content="Unknown">
+    <!-- $ Перенаправление -->
+    <!-- <meta http-equiv="refresh" content="0; url=/"> -->
     <title>flex practice</title>
 </head>
 
@@ -27,7 +39,7 @@
                         <img src="../../image/hi/hi_image.png" alt="Hi image" class="hi__image"></img>
                     </div>
                 </div>
-            </section>
+            </section>\
             <!-- ! What -->
             <section class="what">
                 <div class="container">
@@ -150,8 +162,16 @@
     </div>
     <script src="js/script.js" type="text/javascript"></script>
     <noscript>
-        Внимание! В вашем браузере отключен JavaScript! Без него большая часть функционала сайта
-        работать не будет или будет работать некорректно!
+        <div class="noscript">
+            <h1 class="noscript__title">Внимание!</h1>
+            <h2 class="noscript__title-sup">
+                В вашем браузере отключен JavaScript.
+                Или установлена старая версия JavaScript!
+            </h2>
+            <p class="noscript__text">
+                Без него большая часть функционала сайтаработать не будет или будет работать некорректно!
+            </p>
+        </div>
     </noscript>
 </body>
 
