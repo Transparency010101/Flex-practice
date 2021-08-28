@@ -18,6 +18,7 @@ img {
     // $ Прижимает footer к низу
     flex: 1 1 auto;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
 }
 .container {
     @extend %container;
