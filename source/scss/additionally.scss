@@ -5,7 +5,8 @@
 }
 %title {
     // $ Для заголовков "Что такое FlexBox?" и "Колонки с flex-контейнерами"
-    font-size: 30px;
+    // fz: 30px;
+    font-size: calc(30px + 5 * (100vw / 1280));
     line-height: 36px;
     color: #445161;
 }
