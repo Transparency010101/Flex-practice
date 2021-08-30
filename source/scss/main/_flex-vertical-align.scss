@@ -1,0 +1,89 @@
+// ! Flex vertical align
+.flex-vertical-align {
+    padding: 40px 0;
+    // $ Заголовок
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__body {
+        // $ Ограничивает ширину
+        max-width: 990px;
+        margin: auto;
+    }
+
+    &__row {
+        // $ Flex контейнер
+        display: flex;
+        margin: 0 -22.5px;
+    }
+
+    &__columns {
+        // $ Flex колонки
+        padding: 0 22.5px;
+        max-width: 33.333%;
+        display: flex;
+    }
+    &__item {
+        // $ самаи колонки
+        color: #fff;
+        border-radius: 7px;
+        border: 1px solid #445162;
+        background-color: #445162;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        // $ Зоголовок вверху
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    &__suptitle {
+        // $ Зоголовок в низу
+        text-align: center;
+        font-size: 40px;
+        line-height: 30px;
+        color: #445162;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    &__text {
+        // $ Текст
+        padding: 15px;
+        font-family: Arial;
+        // fz: 14px;
+        font-size: calc(14px + 5 * (100vw / 1280));
+        line-height: 24px;
+        color: #ffffff;
+        flex: 1 0 auto;
+    }
+    &__text p {
+        // $ Отступ
+        padding: 0;
+        margin: 15px 0 0 0;
+    }
+    &__button {
+        // $ Кнопка
+        width: 260px;
+        height: 40px;
+        background-color: #ffffff;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #445161;
+        border-radius: 7px;
+        margin: 19px;
+    }
+    @media (max-width: 900px) {
+        &__columns {
+            padding: 0 0.5px;
+        }
+    }
+}

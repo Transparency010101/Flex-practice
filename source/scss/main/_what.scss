@@ -1,0 +1,32 @@
+// ! What
+.what {
+    // $ Оболочка
+    padding: 35px;
+    &__row {
+        // $ Flex контейнер
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        max-width: 430px;
+        max-height: 186px;
+    }
+}
+.what-flexbox {
+    // $ Оболочка Для текста
+    margin-left: 30px;
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        // fz:16px;
+        font-size: calc(16px + 4 * (100vw / 1280));
+        line-height: 24px;
+        color: #333333;
+    }
+
+    &__text--indent {
+        margin-top: 15px;
+    }
+}

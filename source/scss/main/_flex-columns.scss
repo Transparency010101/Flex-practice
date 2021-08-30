@@ -1,0 +1,45 @@
+// ! flex columns
+.flex-columns {
+    padding: 35px 0;
+    background-color: #f5f5f5;
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.flex-container {
+    // $ Оболочка
+    width: 100%;
+    &__row {
+        // $ Flex контейнер
+        margin-right: -25px;
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 25%;
+    }
+
+    &__body {
+        // $ Оболочка для &__image, &__title, &__text
+        margin-left: 15px;
+    }
+
+    &__image {
+        margin-bottom: 25px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__title {
+        // fz:24px
+        font-size: calc(20px + 9 * (100vw / 1280));
+        line-height: 30px;
+        color: #445161;
+    }
+
+    &__text {
+        // fz: 16px;
+        font-size: calc(16px + 4 * (100vw / 1280));
+        line-height: 24px;
+        color: #333333;
+    }
+}
