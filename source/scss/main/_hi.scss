@@ -8,7 +8,8 @@
         // $ Flex контейнер
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        // margin-top: 20px;
+        margin-top: calc(5px + 15 * (100vw / 1280));
     }
 
     &__body {
@@ -20,7 +21,8 @@
 
     &__title {
         // $ title
-        font-size: 60px;
+        // font-size: 60px;
+        font-size: calc(35px + 15 * (100vw / 1280));
         line-height: 1.2;
     }
     &__list {
@@ -31,11 +33,23 @@
             padding: 0 15px 0 0;
         }
         & li {
-            font-size: 20px;
+            // font-size: 20px;
+            font-size: calc(9px + 11 * (100vw / 1280));
             line-height: 36px;
         }
     }
     &__image {
         max-height: 217px;
+    }
+    @media (max-width: 768px) {
+        & li {
+            font-size: calc(9px + 11 * ((100vw - 320px) / (768 - 320)));
+        }
+        &__title {
+            font-size: calc(35px + 15 * ((100vw - 320px) / (768 - 320)));
+        }
+        &__row {
+            margin-top: calc(5px + 15 * ((100vw - 320px) / (768 - 320)));
+        }
     }
 }

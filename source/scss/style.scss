@@ -24,15 +24,17 @@ img {
 }
 %title {
     // $ Для заголовков "Что такое FlexBox?" и "Колонки с flex-контейнерами"
-    // fz: 30px;
-    font-size: calc(30px + 5 * (100vw / 1280));
+    // font-size: 30px;
+    font-size: calc(18px + 12 * (100vw / 1080));
     line-height: 36px;
     color: #445161;
 }
-.container {@extend %container;}
-.title {@extend %title;}
-
-
+.container {
+    @extend %container;
+}
+.title {
+    @extend %title;
+}
 
 // $ Отделтные блоки кода
 @import "main/_hi.scss";
