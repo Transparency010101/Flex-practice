@@ -8,8 +8,14 @@
         justify-content: space-between;
     }
     &__img {
-        max-width: 430px;
-        max-height: 186px;
+        max-width: 500px;
+        max-height: 145px;
+    }
+    @media (max-width: 866px) {
+        &__row {
+            justify-content: start;
+            flex-wrap: wrap;
+        }
     }
 }
 .what-flexbox {
@@ -20,13 +26,18 @@
     }
 
     &__text {
-        // fz:16px;
-        font-size: calc(16px + 4 * (100vw / 1280));
+        // font-size: 16px;
+        font-size: calc(12px + 4 * (100vw / 1280));
         line-height: 24px;
         color: #333333;
     }
 
     &__text--indent {
         margin-top: 15px;
+    }
+    @media (max-width: 866px) {
+        &__text {
+            font-size: calc(12px + 4 * ((100vw - 320px) / (1080 - 320)));
+        }
     }
 }

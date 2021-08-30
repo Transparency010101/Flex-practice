@@ -165,17 +165,30 @@ img {
   line-height: 36px;
 }
 .hi__image {
-  max-height: 217px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .hi li {
-    font-size: calc(9px + 11 * ((100vw - 320px) / (768 - 320)));
+    font-size: calc(9px + 11 * ((100vw - 320px) / (1080 - 320)));
   }
   .hi__title {
-    font-size: calc(35px + 15 * ((100vw - 320px) / (768 - 320)));
+    font-size: calc(35px + 15 * ((100vw - 320px) / (1080 - 320)));
   }
   .hi__row {
-    margin-top: calc(5px + 15 * ((100vw - 320px) / (768 - 320)));
+    margin-top: calc(5px + 15 * ((100vw - 320px) / (1080 - 320)));
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .hi__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -191,8 +204,17 @@ img {
           justify-content: space-between;
 }
 .what__img {
-  max-width: 430px;
-  max-height: 186px;
+  max-width: 500px;
+  max-height: 145px;
+}
+@media (max-width: 866px) {
+  .what__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .what-flexbox {
@@ -202,12 +224,17 @@ img {
   margin-bottom: 20px;
 }
 .what-flexbox__text {
-  font-size: calc(16px + 4 * (100vw / 1280));
+  font-size: calc(12px + 4 * (100vw / 1280));
   line-height: 24px;
   color: #333333;
 }
 .what-flexbox__text--indent {
   margin-top: 15px;
+}
+@media (max-width: 866px) {
+  .what-flexbox__text {
+    font-size: calc(12px + 4 * ((100vw - 320px) / (1080 - 320)));
+  }
 }
 
 .flex-columns {
