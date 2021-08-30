@@ -43,7 +43,7 @@
     }
     @media (max-width: 866px) {
         & li {
-            font-size: calc(9px + 11 * ((100vw - 320px) / (1080 - 320)));
+            font-size: calc(11px + 9 * ((100vw - 320px) / (1080 - 320)));
         }
         &__title {
             font-size: calc(35px + 15 * ((100vw - 320px) / (1080 - 320)));

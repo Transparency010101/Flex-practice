@@ -9,19 +9,19 @@
 
     &__body {
         // $ Ограничивает ширину
-        max-width: 990px;
+        max-width: 900px;
         margin: auto;
     }
 
     &__row {
         // $ Flex контейнер
         display: flex;
-        margin: 0 -22.5px;
+        margin: -20px -22.5px;
     }
 
     &__columns {
         // $ Flex колонки
-        padding: 0 22.5px;
+        padding: 20px 22.5px;
         max-width: 33.333%;
         display: flex;
     }
@@ -80,10 +80,16 @@
         color: #445161;
         border-radius: 7px;
         margin: 19px;
+        margin: 30px auto;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 958px) {
+        &__row {
+            flex-wrap: wrap;
+            margin: -20px -5px;
+        }
         &__columns {
-            padding: 0 0.5px;
+            max-width: 100%;
+            padding: 20px 5px;
         }
     }
 }
